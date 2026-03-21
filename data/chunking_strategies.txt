@@ -1,0 +1,11 @@
+Chunking is the process of dividing large documents into smaller segments for processing. In the context of language models, chunking is necessary because models have a limited context window and cannot process arbitrarily large inputs at once.
+
+There are multiple strategies for chunking. Fixed-size chunking divides text into segments of a predefined length, often with overlap to preserve context. Semantic chunking attempts to split text based on natural boundaries such as sentences or paragraphs. Recursive chunking combines both approaches to balance size and coherence.
+
+Overlap is an important parameter in chunking. By including a portion of the previous chunk in the next one, systems can maintain continuity and avoid losing important context. However, too much overlap increases redundancy and computational cost.
+
+The choice of chunk size and strategy can significantly affect the performance of a RAG system. Smaller chunks may improve retrieval precision but risk losing context, while larger chunks may include irrelevant information.
+
+Advanced chunking techniques involve using language models to identify meaningful boundaries or dynamically adjusting chunk sizes based on content. These approaches aim to optimize both retrieval quality and efficiency.
+
+Effective chunking is a critical step in building scalable and accurate AI systems that rely on document retrieval.

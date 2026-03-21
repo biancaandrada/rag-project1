@@ -1,0 +1,9 @@
+Prompt engineering is the practice of designing effective inputs for language models to achieve desired outputs. Since large language models generate responses based on patterns in their training data, the way a prompt is formulated can significantly influence the result.
+
+A good prompt provides clear instructions, relevant context, and constraints. For example, specifying the desired format of the answer or limiting the scope of the response can improve consistency. In RAG systems, prompt engineering also involves integrating retrieved context in a way that guides the model to use it effectively.
+
+There are several techniques in prompt engineering. Few-shot prompting involves providing examples of desired behavior within the prompt. Chain-of-thought prompting encourages the model to reason step by step. System prompts define the overall behavior of the model, such as tone or expertise level.
+
+Despite its importance, prompt engineering has limitations. It can be brittle, meaning small changes in wording can lead to different outputs. Additionally, overly long prompts may exceed the model’s context window, leading to truncation.
+
+As AI systems evolve, prompt engineering is increasingly complemented by fine-tuning and tool integration. However, it remains a critical skill for controlling model behavior and achieving reliable results in practical applications.

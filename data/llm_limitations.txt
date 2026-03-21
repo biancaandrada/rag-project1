@@ -1,0 +1,11 @@
+Large Language Models (LLMs) have demonstrated impressive capabilities in generating human-like text, but they are not without limitations. One of the most well-known issues is hallucination, where the model generates information that is plausible but incorrect.
+
+Another limitation is the lack of true understanding. LLMs operate based on statistical patterns in data rather than genuine comprehension. This means they can struggle with tasks that require deep reasoning or domain-specific expertise.
+
+Bias is also a significant concern. Since models are trained on large datasets from the internet, they may inherit and amplify existing biases. Addressing these biases requires careful dataset curation and evaluation.
+
+LLMs are also constrained by their context window. They can only consider a limited amount of text at a time, which restricts their ability to process large documents or maintain long conversations.
+
+Additionally, the computational cost of training and running LLMs is substantial. This raises concerns about accessibility and environmental impact.
+
+To mitigate these limitations, techniques such as RAG, fine-tuning, and tool integration are used. These approaches help improve accuracy, reduce hallucinations, and extend the capabilities of language models in practical applications.

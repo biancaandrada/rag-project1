@@ -1,0 +1,9 @@
+Retrieval-Augmented Generation (RAG) is an architecture that combines information retrieval with generative models to produce more accurate and grounded responses. Traditional language models rely solely on their training data, which may be outdated or incomplete. RAG addresses this limitation by dynamically retrieving relevant information from external sources at query time.
+
+The process begins with indexing documents. Text data is split into smaller chunks and transformed into vector representations called embeddings. These embeddings are stored in a vector database such as Chroma or Pinecone. When a user submits a query, it is also converted into an embedding. The system then performs a similarity search to find the most relevant chunks from the database.
+
+Once relevant documents are retrieved, they are injected into the prompt as context. The language model then generates an answer based on both the user’s question and the retrieved information. This significantly reduces hallucinations and improves factual accuracy.
+
+RAG systems are widely used in applications such as customer support, internal knowledge bases, and document search systems. However, designing an effective RAG pipeline requires careful tuning. Key considerations include chunk size, overlap, embedding model selection, and retrieval strategy.
+
+Advanced RAG systems may include reranking, hybrid search (combining keyword and vector search), and context compression. These techniques help improve relevance and efficiency. Overall, RAG represents a practical approach to extending the capabilities of language models with real-time, domain-specific knowledge.

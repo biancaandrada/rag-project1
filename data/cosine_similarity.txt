@@ -1,0 +1,11 @@
+Cosine similarity is a mathematical measure used to determine how similar two vectors are. It calculates the cosine of the angle between two vectors in a high-dimensional space. The result ranges from -1 to 1, where 1 indicates identical direction, 0 indicates orthogonality, and -1 indicates opposite direction.
+
+In the context of embeddings, cosine similarity is widely used to measure semantic similarity between texts. Since embeddings represent meaning, vectors that point in similar directions correspond to texts with similar meanings.
+
+One advantage of cosine similarity is that it is independent of vector magnitude. This makes it particularly suitable for comparing embeddings, where the direction of the vector is more important than its length.
+
+In practice, cosine similarity is used in search systems, recommendation engines, and clustering algorithms. For example, in a RAG system, the query embedding is compared to document embeddings using cosine similarity to find the most relevant content.
+
+However, cosine similarity is not the only metric available. Alternatives such as Euclidean distance or dot product may be used depending on the application. Choosing the right similarity metric can impact the quality of retrieval results.
+
+Understanding cosine similarity is essential for working with vector-based systems, as it forms the foundation of semantic search and many machine learning applications.

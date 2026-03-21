@@ -1,0 +1,11 @@
+Vector databases are specialized systems designed to store and query high-dimensional vector data efficiently. Unlike traditional databases that rely on exact matches or structured queries, vector databases enable similarity-based retrieval, which is essential for modern AI applications.
+
+In a vector database, each piece of data is represented as an embedding. These embeddings are indexed using algorithms optimized for approximate nearest neighbor (ANN) search. Common indexing techniques include HNSW (Hierarchical Navigable Small World) and IVF (Inverted File Index).
+
+When a query is performed, the system retrieves vectors that are closest to the query vector according to a similarity metric such as cosine similarity or Euclidean distance. This allows applications to find semantically similar items quickly, even in large datasets.
+
+Vector databases are commonly used in search engines, recommendation systems, and RAG pipelines. They enable fast retrieval of relevant information, which can then be used by downstream models such as language generators.
+
+However, vector databases also introduce challenges. Managing updates, ensuring consistency, and tuning performance parameters can be complex. Additionally, they often require careful consideration of memory and storage requirements.
+
+Overall, vector databases are a key component of modern AI infrastructure, enabling scalable and efficient semantic search capabilities.

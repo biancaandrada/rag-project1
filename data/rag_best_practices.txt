@@ -1,0 +1,15 @@
+Building an effective RAG system requires more than simply combining retrieval and generation. Several best practices can significantly improve performance and reliability.
+
+First, data quality is critical. Documents should be clean, well-structured, and relevant to the domain. Poor data leads to poor retrieval and inaccurate answers.
+
+Second, chunking strategy must be carefully chosen. As discussed earlier, chunk size and overlap affect both retrieval precision and context quality. Experimentation is often necessary to find the optimal configuration.
+
+Third, retrieval quality should be evaluated using metrics such as recall and precision. In some cases, reranking models can be used to improve the ordering of retrieved results.
+
+Fourth, prompt design plays a key role. Clear instructions and well-formatted context help guide the model toward accurate answers. Including citations in the context can also improve transparency.
+
+Fifth, monitoring and evaluation are essential. Logging queries, responses, and retrieval results allows developers to identify issues and iterate on the system.
+
+Finally, scalability and cost must be considered. Efficient indexing, batching, and caching can help manage resources effectively.
+
+By following these best practices, developers can build robust RAG systems that deliver accurate and reliable results in real-world applications.

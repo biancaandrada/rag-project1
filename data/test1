@@ -1,0 +1,17 @@
+ipeline requires careful tuning. Key considerations include chunk size, overlap, embedding model selection, and retrieval strategy.
+
+Advanced RAG systems may include reranking, hybrid search (combining keyword and vector search), and context compression. These
+techniques help improve relevance and efficiency. Overall, RAG represents a practical approach to extending the capabilities of
+language models with real-time, domain-specific knowledge.
+
+etrieval-Augmented Generation (RAG) is an architecture that combines information retrieval with generative models to produce more accurate and grounded responses. Traditional language models rely solely on their training data, which may be outdated or incomplete. RAG addresses this limitation by dynamically retrieving relevant information from external sources at query time.
+
+The process begins with indexing documents. Text data is split into smaller chunks and transformed into vector representations called embeddings. These embeddings are stored in a vector database such as Chroma or Pinecone. When a user submits a query, it is also converted into an embedding. The system then performs a s
+
+p manage resources effectively.
+
+By following these best practices, developers can build robust RAG systems that deliver accurate and reliable results in real-world applications.
+
+
+
+RAG (Retrieval-Augmented Generation) is an architecture that combines information retrieval with generative models to produce more accurate and grounded responses. It addresses the limits of models that rely only on training data by dynamically retrieving relevant information from external sources at query time. The workflow involves indexing documents, splitting text into chunks, creating embeddings, and storing them in a vector database (e.g., Chroma or Pinecone); a user query is embedded and used to retrieve relevant chunks that guide generation. Building an effective pipeline requires tuning chunk size, overlap, embedding model selection, and retrieval strategy. Advanced techniques include reranking, hybrid search (keyword + vector), and context compression to improve relevance and efficiency.

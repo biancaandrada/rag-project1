@@ -47,8 +47,6 @@ def answer(question: str):
     context_blocks = []
     for doc, meta in zip(docs, metas):
         context_blocks.append(f"[Sursa: {meta['source']}, chunk:  {meta['chunk']}]\n{doc}\n\n\n\n\n")
-        #print(f"[new: {context_blocks}")
-        #print("\n")
 
     context = "\n\n---\n\n".join(context_blocks)
 
@@ -67,8 +65,8 @@ Question:
         model= "gpt-5"
     )
 
-    print("\n=== CONTEXT ===\n")
-    print(context)
+    # print("\n=== CONTEXT ===\n")
+    # print(context)
     print("\n=== Response ===\n")
     print(response.output_text)
 
@@ -80,7 +78,3 @@ if __name__ == "__main__":
             break
 
         answer(q)
-
-
-
-
